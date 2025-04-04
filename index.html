@@ -1,16 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS3Toolbox 🎮 - PlayStation 3 Toolkit</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PS3Toolbox 🕹️ - PlayStation 3 Toolkit</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ps3-logo {
+            width: 50px;
+            margin-right: 15px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .features li {
+            margin: 10px 0;
+        }
+
+        /* Site Link Section */
+        .site-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* File Structure Section */
+        .file-structure {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/PlayStation_3_logo.svg" alt="PS3 Logo" class="ps3-logo">
-            <h1>PS3Toolbox 🎮</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/PlayStation_3_logo.svg" alt="PS3 Logo"
+                class="ps3-logo">
+            <h1>PS3Toolbox 🕹️</h1>
         </div>
     </header>
 
@@ -44,4 +146,5 @@ PS3Toolbox/
         <p>&copy; 2025 PS3Toolbox | MIT License</p>
     </footer>
 </body>
+
 </html>
