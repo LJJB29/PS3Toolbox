@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3Tools - XMB Style</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #000, #111);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .xmb-bar {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      padding-left: 80px;
+    }
+
+    .xmb-category {
+      margin-right: 60px;
+      text-align: center;
+    }
+
+    .xmb-category img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 5px #0ff);
+    }
+
+    .xmb-category a {
+      text-decoration: none;
+      color: #0ff;
+      font-weight: bold;
+      display: block;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .xmb-category a:hover {
+      transform: scale(1.1);
+      color: #fff;
+    }
+
+    .title {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      font-size: 24px;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">3Tools - XMB Edition</div>
+  <div class="xmb-bar">
+    <div class="xmb-category">
+      <img src="https://img.icons8.com/fluency/96/download.png" alt="Download">
+      <a href="ps3hen.pkg" download>PS3HEN</a>
+    </div>
+    <div class="xmb-category">
+      <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="File">
+      <a href="multiman.pkg" download>MultiMAN</a>
+    </div>
+    <div class="xmb-category">
+      <img src="https://img.icons8.com/fluency/96/link.png" alt="Link">
+      <a href="https://ps3xploit.me" target="_blank">PS3Xploit</a>
+    </div>
+  </div>
+</body>
+</html>
