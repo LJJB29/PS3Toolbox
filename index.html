@@ -7,14 +7,14 @@
   <style>
     body {
       font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
-      color: #fff;
       margin: 0;
-      padding: 0;
+      background: #000 url('https://i.imgur.com/fmpZBrH.png') repeat-x;
+      background-size: cover;
+      color: #fff;
     }
 
     header {
-      background: linear-gradient(to right, #003366, #001f3f);
+      background: rgba(0, 0, 0, 0.7);
       padding: 30px;
       text-align: center;
       border-bottom: 2px solid #00ffcc;
@@ -27,28 +27,17 @@
     }
 
     nav {
-      background-color: #111;
-      padding: 10px 0;
+      background: #111;
       text-align: center;
+      padding: 10px 0;
       border-bottom: 1px solid #333;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav li {
-      display: inline;
-      margin: 0 15px;
     }
 
     nav a {
       color: #00ffcc;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
     }
 
     nav a:hover {
@@ -57,21 +46,25 @@
 
     main {
       padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    section {
+      margin-bottom: 40px;
     }
 
     h2 {
       color: #00ffcc;
+      border-bottom: 1px solid #00ffcc;
+      padding-bottom: 5px;
     }
 
     a {
       color: #00ccff;
-      text-decoration: none;
-      transition: color 0.2s, text-shadow 0.2s;
     }
 
     a:hover {
       color: #ffffff;
-      text-shadow: 0 0 5px #00ffff;
     }
 
     .install-btn {
@@ -79,114 +72,142 @@
       background-color: #00ffcc;
       color: #000;
       padding: 10px 20px;
-      text-decoration: none;
       border-radius: 5px;
+      text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
       margin-top: 10px;
     }
 
     .install-btn:hover {
       background-color: #00e6b8;
-      transform: scale(1.05);
     }
 
-    footer {
-      background-color: #111;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
-      color: #aaa;
-      border-top: 1px solid #333;
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
     }
 
     .note {
       background-color: #2b2b2b;
       padding: 10px;
+      margin-top: 10px;
       border-left: 5px solid #00ffcc;
-      margin: 15px 0;
     }
 
-    .ps3-warning {
-      background-color: #003366;
-      color: #00ffcc;
-      padding: 10px;
+    footer {
+      background: #111;
       text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+
+    ul, ol {
+      line-height: 1.8em;
+    }
+
+    .downloads a {
+      display: block;
+      margin: 10px 0;
       font-weight: bold;
-      display: none;
-      border-bottom: 2px solid #00ffcc;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+    }
+
+    .faq-item h4 {
+      margin: 0;
+      color: #00ccff;
+    }
+
+    .faq-item p {
+      margin: 5px 0 0;
     }
   </style>
 </head>
 <body>
-  <div class="ps3-warning" id="ps3Warning">
-    You're browsing with a PlayStation 3! Welcome to the modding zone.
-  </div>
 
   <header>
     <h1>PS3Toolbox</h1>
-    <p>Your ultimate toolbox for PS3 modding</p>
+    <p>Ultimate PS3HEN Installer Guide & Downloads</p>
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#hfw">Install HFW</a></li>
-      <li><a href="#hen">Install PS3HEN</a></li>
-      <li><a href="#files">Download Files</a></li>
-      <li><a href="#guides">Guides</a></li>
-    </ul>
+    <a href="#hfw">Install HFW</a>
+    <a href="#hen">Install HEN</a>
+    <a href="#videos">Tutorials</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#faq">FAQ</a>
   </nav>
 
   <main>
+
     <section id="hfw">
-      <h2>Step 1: Install HFW (Hybrid Firmware)</h2>
-      <p>Before you can install HEN, you need to install Hybrid Firmware (HFW). This is an official firmware + exploit enabler.</p>
+      <h2>1. Install Hybrid Firmware (HFW 4.92)</h2>
       <ol>
-        <li>Download the latest HFW (currently 4.92) from this link: <a href="https://store.brewology.com/ahfw.php" target="_blank">Download HFW</a></li>
-        <li>Extract the file and place the <code>PS3/UPDATE/PS3UPDAT.PUP</code> on a USB drive (formatted to FAT32).</li>
-        <li>Insert the USB into your PS3 and go to: <strong>Settings > System Update > Update via Storage Media</strong>.</li>
-        <li>Install the HFW like a normal update. Once complete, your system will still look official, but it's now ready for HEN.</li>
+        <li>Download HFW 4.92 from Brewology: <a href="https://store.brewology.com/ahfw.php" target="_blank">Download Here</a></li>
+        <li>Extract and place <code>PS3/UPDATE/PS3UPDAT.PUP</code> on a FAT32 USB drive.</li>
+        <li>On PS3, go to <strong>System Update > Update via Storage Media</strong>.</li>
       </ol>
-      <div class="note">
-        <strong>Note:</strong> HFW 4.92 is required to install the latest PS3HEN. Make sure you're on 4.92 or update to it using the link above.
-      </div>
+      <div class="note">Make sure you're NOT on firmware 4.93 or higher. Downgrade first if needed.</div>
     </section>
 
     <section id="hen">
-      <h2>Step 2: Install PS3HEN</h2>
-      <p>Once HFW is installed, visit this website on your PS3's Internet Browser to install PS3HEN:</p>
-      <p><strong>URL:</strong> <code>https://ps3toolbox.github.io</code></p>
-      <p>Then click below to launch the HEN installer:</p>
-      <a class="install-btn" href="https://ps3toolbox.github.io/hen/installer.html">Launch PS3HEN Installer</a>
-      <div class="note">
-        <strong>Pro Tip:</strong> Press Triangle on your PS3 browser > Tools > Homepage > Use Current to make this site your startup page.
+      <h2>2. Install PS3HEN</h2>
+      <ol>
+        <li>Open the PS3 browser and go to: <a href="http://ps3xploit.me/hen/installer" target="_blank">ps3xploit.me/hen/installer</a></li>
+        <li>Clear cookies/cache (Triangle > Tools) before loading.</li>
+        <li>Run the exploit and follow the on-screen instructions.</li>
+        <li>Once installed, reboot and go to "Enable HEN" from Game menu.</li>
+      </ol>
+      <a class="install-btn" href="http://ps3xploit.me/hen/installer">Open PS3HEN Installer</a>
+    </section>
+
+    <section id="videos">
+      <h2>3. Video Tutorial</h2>
+      <p>Watch this full walkthrough on how to install HFW and PS3HEN:</p>
+      <iframe src="https://www.youtube.com/embed/qGQ5K8K6t2g" allowfullscreen></iframe>
+    </section>
+
+    <section id="downloads">
+      <h2>4. Tools & Downloads</h2>
+      <div class="downloads">
+        <a href="https://store.brewology.com/ahfw.php" target="_blank">HFW 4.92 (Brewology)</a>
+        <a href="https://github.com/ps3xploit/PS3Xploit-Tools" target="_blank">PS3Xploit Tools (GitHub)</a>
+        <a href="https://www.mediafire.com/file/yourfile.pkg" target="_blank">HEN Installer .PKG (Mirror)</a>
+        <a href="https://github.com/aldostools/webMAN-MOD" target="_blank">webMAN MOD (GitHub)</a>
       </div>
     </section>
 
-    <section id="files">
-      <h2>Download Files</h2>
-      <ul>
-        <li><a href="files/hen_installer.zip" download>PS3HEN Installer Package</a></li>
-        <li><a href="files/exploit_files.zip" download>Exploit Files</a></li>
-      </ul>
+    <section id="faq">
+      <h2>5. Troubleshooting & FAQ</h2>
+
+      <div class="faq-item">
+        <h4>Q: Exploit keeps freezing or failing?</h4>
+        <p>A: Clear cache and cookies before each try. Reboot PS3. Use a wired connection if possible.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Q: I'm on firmware 4.93. Can I install HEN?</h4>
+        <p>A: Not yet. You’ll need to wait for new HFW or downgrade with a flasher.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Q: HEN disappears after reboot?</h4>
+        <p>A: This is normal. You must re-enable it after each restart via the "Enable HEN" icon.</p>
+      </div>
+
     </section>
 
-    <section id="guides">
-      <h2>More Help</h2>
-      <p>New to PS3 modding? Check out our <a href="guides/ps3hen_guide.html">full step-by-step guide</a> or watch video tutorials.</p>
-    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 PS3Toolbox. Powered by caffeine and console chaos.</p>
+    <p>&copy; 2025 PS3Toolbox. Guide powered by ps3xploit.me, Brewology, GitHub, and community brains.</p>
   </footer>
 
-  <script>
-    // PS3 Detection
-    const userAgent = navigator.userAgent;
-    if (userAgent.includes("PLAYSTATION 3")) {
-      document.getElementById("ps3Warning").style.display = "block";
-    }
-  </script>
 </body>
 </html>
