@@ -7,7 +7,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #1b1b1b;
-            color: #fff;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
@@ -18,15 +18,21 @@
             text-align: center;
         }
 
+        header h1 {
+            margin: 0;
+            color: #00ffcc;
+        }
+
         nav {
-            background-color: #444;
-            padding: 10px;
+            background-color: #222;
+            padding: 10px 0;
             text-align: center;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         nav li {
@@ -37,10 +43,31 @@
         nav a {
             color: #00ffcc;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
         }
 
         main {
             padding: 20px;
+        }
+
+        h2 {
+            color: #00ffcc;
+        }
+
+        a {
+            color: #00ddff;
+            text-decoration: none;
+            transition: color 0.2s, text-shadow 0.2s;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 5px #00ffff;
         }
 
         .install-btn {
@@ -50,12 +77,21 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .install-btn:hover {
+            background-color: #00e6b8;
+            transform: scale(1.05);
         }
 
         footer {
-            background-color: #222;
+            background-color: #111;
             padding: 10px;
             text-align: center;
+            font-size: 14px;
+            color: #aaa;
         }
     </style>
 </head>
@@ -83,8 +119,8 @@
         <section id="files">
             <h2>Download Files</h2>
             <ul>
-                <li><a href="files/hen_installer.zip">PS3HEN Installer Package</a></li>
-                <li><a href="files/exploit_files.zip">Exploit Files</a></li>
+                <li><a href="files/hen_installer.zip" download>PS3HEN Installer Package</a></li>
+                <li><a href="files/exploit_files.zip" download>Exploit Files</a></li>
             </ul>
         </section>
 
@@ -95,7 +131,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 PS3Toolbox. Powered by pizza and PlayStation hacks.</p>
+        <p>&copy; 2025 PS3Toolbox. Powered by pizza, caffeine, and PlayStation hacks.</p>
     </footer>
 </body>
 </html>
