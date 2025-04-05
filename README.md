@@ -92,6 +92,9 @@ Thank you to everyone who has contributed to PS3 modding and HEN development!
 
 ---
 
+## As Always...
+Powered By Pizza
+
 ## 💬 Feedback
 
 If you have any issues or suggestions, feel free to open an issue in this repository or contact us via our [Discord server](#) for live support.
